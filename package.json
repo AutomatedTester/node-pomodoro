@@ -6,7 +6,7 @@
   , "keywords": ["pomodoro", "cli"]
   , "author": "David Burns"
   , "dependencies": {
-      "growl": "1.5.0"
+      "growl": "1.6.1"
       , "nomnom":"1.5.1"
     }
   , "repository": {
