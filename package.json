@@ -1,6 +1,6 @@
 {
     "name": "pomodoro"
-  , "version": "0.0.1"
+  , "version": "0.0.2"
   , "description": "A simple CLI based pomodoro"
   , "homepage" : "http://oss.automatedtester.co.uk/node-pomodoro"
   , "keywords": ["pomodoro", "cli"]
@@ -12,7 +12,7 @@
   , "repository": {
         "type": "git",
         "url": "http://github.com/automatedtester/node-pomodoro.git"
-  }    
+  }
   , "bin": {
         "pomodoro": "./bin/main.js",
         "p": "./bin/main.js"
