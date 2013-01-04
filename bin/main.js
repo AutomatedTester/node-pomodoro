@@ -17,6 +17,11 @@ var options = nomnom.options({
       abbr: 'r'
       , help: "Remove items that we have saved to disk"
     }
+    , show: {
+      flag: true
+      , abbr: 's'
+      , help: "Show all the items in the file"
+    }
     , version: {
       flag: true
       , abbr: 'v'
@@ -25,7 +30,7 @@ var options = nomnom.options({
   }).parse();
 
 var pomodoro = new Pomodoro();
-if ((options._.length != 0) && !options.add && !options.remove) {
+if ((options._.length != 0) && !options.add && !options.remove && !options.show) {
   pomodoro.run(options._.join(' '));
 }
 
@@ -35,5 +40,9 @@ if (options.add) {
 
 if (options.remove) {
   pomodoro.remove(options.remove);
+}
+
+if (options.show){
+  pomodoro.show();
 }
 
