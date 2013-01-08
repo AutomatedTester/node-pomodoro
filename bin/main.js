@@ -22,6 +22,10 @@ var options = nomnom.options({
       , abbr: 's'
       , help: "Show all the items in the file"
     }
+    , start: {
+      flag: true
+      , help: "Start running the top item in the list"
+    }
     , version: {
       flag: true
       , abbr: 'v'
@@ -30,19 +34,22 @@ var options = nomnom.options({
   }).parse();
 
 var pomodoro = new Pomodoro();
-if ((options._.length != 0) && !options.add && !options.remove && !options.show) {
+if (!options.add && !options.remove && !options.show && !options.start) {
   pomodoro.run(options._.join(' '));
 }
 
 if (options.add) {
-  pomodoro.add(options._.join(' '));
+  pomodoro.add(options.add + ' ' + options._.join(' '));
 }
 
 if (options.remove) {
   pomodoro.remove(options.remove);
 }
 
-if (options.show){
+if (options.show) {
   pomodoro.show();
 }
 
+if (options.start) {
+  pomodoro.start();
+}
