@@ -26,6 +26,11 @@ var options = nomnom.options({
       flag: true
       , help: "Start running the top item in the list"
     }
+    , break: {
+      abbr: 'b'
+      , help: "Time a break and be notified when to start again. Pass in the" +
+        " amount of munites to break for."
+    }
     , version: {
       flag: true
       , abbr: 'v'
@@ -34,7 +39,7 @@ var options = nomnom.options({
   }).parse();
 
 var pomodoro = new Pomodoro();
-if (!options.add && !options.remove && !options.show && !options.start) {
+if (!options.add && !options.remove && !options.show && !options.start && !options.break) {
   pomodoro.run(options._.join(' '));
 }
 
@@ -52,4 +57,8 @@ if (options.show) {
 
 if (options.start) {
   pomodoro.start();
+}
+
+if (options.break) {
+  pomodoro.break(options.break);
 }
