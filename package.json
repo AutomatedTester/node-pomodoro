@@ -9,6 +9,7 @@
       "growl": "1.8.1"
       , "nomnom":"1.8.1"
       , "single-line-log":"0.4.1"
+      , "colors": "1.0.3"
     }
   , "repository": {
         "type": "git",
