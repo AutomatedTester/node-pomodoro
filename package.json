@@ -6,8 +6,9 @@
   , "keywords": ["pomodoro", "cli"]
   , "author": "David Burns"
   , "dependencies": {
-      "growl": "1.6.1"
-      , "nomnom":"1.5.1"
+      "growl": "1.8.1"
+      , "nomnom":"1.8.1"
+      , "single-line-log":"0.4.1"
     }
   , "repository": {
         "type": "git",
