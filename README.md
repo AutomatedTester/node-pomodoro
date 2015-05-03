@@ -2,6 +2,14 @@
 
 This is a basic CLI app that allows you to do pomodoro''s  in the command line. When the pomodoro is complete it will send a growl message.
 
+## How to install it
+
+To install it you will need to have node.js or io.js installed.
+
+To install run:
+
+`npm install -g pomodoro`
+
 ## How to use it
 
 ```
