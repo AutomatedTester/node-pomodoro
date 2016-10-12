@@ -1,24 +1,27 @@
 {
-    "name": "pomodoro"
-  , "version": "0.2.0"
-  , "description": "A simple CLI based pomodoro"
-  , "homepage" : "http://oss.automatedtester.co.uk/node-pomodoro"
-  , "keywords": ["pomodoro", "cli"]
-  , "author": "David Burns"
-  , "dependencies": {
-      "growl": "1.8.1"
-      , "nomnom":"1.8.1"
-      , "single-line-log":"0.4.1"
-      , "colors": "1.0.3"
-    }
-  , "repository": {
-        "type": "git",
-        "url": "http://github.com/automatedtester/node-pomodoro.git"
-  }
-  , "bin": {
-        "pomodoro": "./bin/main.js",
-        "p": "./bin/main.js"
-    }
-  , "main": "./bin/main.js"
-  , "preferGlobal" : "true"
+  "name": "pomodoro",
+  "version": "0.2.0",
+  "description": "A simple CLI based pomodoro",
+  "homepage": "http://oss.automatedtester.co.uk/node-pomodoro",
+  "keywords": [
+    "pomodoro",
+    "cli"
+  ],
+  "author": "David Burns",
+  "dependencies": {
+    "colors": "1.0.3",
+    "node-notifier": "^4.6.1",
+    "nomnom": "1.8.1",
+    "single-line-log": "0.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/automatedtester/node-pomodoro.git"
+  },
+  "bin": {
+    "pomodoro": "./bin/main.js",
+    "p": "./bin/main.js"
+  },
+  "main": "./bin/main.js",
+  "preferGlobal": "true"
 }
