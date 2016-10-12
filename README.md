@@ -25,3 +25,13 @@ Options:
    -b, --break     Time a break and be notified when to start again. Pass in the amount of munites to break for.
    -v, --version   writes the version to the screen
  ```
+
+
+## Requirements
+
+This package uses [node-notifier](https://github.com/mikaelbr/node-notifier) to trigger desktop notifications. [As stated in their docs](https://github.com/mikaelbr/node-notifier#requirements), their requirements are as follows:
+
+- macOS: >= 10.8 or Growl if earlier.
+- Linux: notify-osd or libnotify-bin installed (Ubuntu should have this by default)
+- Windows: >= 8, task bar balloon if earlier or Growl if that is installed.
+- General Fallback: Growl
