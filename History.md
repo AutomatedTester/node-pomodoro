@@ -1,4 +1,10 @@
 
+0.2.0 / 2015-09-22
+==================
+
+  * Output more neatly when coming to the end of a session
+  * Move some of the string manipulation to ES6 Templates
+
 0.1.3 / 2015-02-18
 ==================
 
