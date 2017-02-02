@@ -1,4 +1,15 @@
 
+0.2.1 / 2017-02-02
+==================
+
+  * Wrap keys in quotes. Fixes #4
+  * Update change log
+  * update README
+  * use node-notifier instead of growl
+  * update variable declarations to use let instead of var
+  * Output more neatly when coming to the end of a session
+  * Move some of the string manipulation to ES6 Templates
+
 0.2.0 / 2015-09-22
 ==================
 
